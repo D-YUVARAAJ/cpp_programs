@@ -1,32 +1,41 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<cmath>
 using namespace std;
-int main() 
+
+int main()
 {
-    int a;
-    cout<<"enter the number to find prime or not ";
-    cin>>a;
+int a;
+int count;
+cout<<"enter number to find prime or not ";
+cin>>a;
+system("clear");
 
-   for (int i=2;i<=sqrt(a);i++)
-   {
-    if(a<=1)
-    {
-        cout<<"not prime number";
-    }
-
-    else if (a%i==0)
-    {
-        cout<<"not a prime number ";
-
-    }
-    else
-    {
-        cout<<"prime number ";
-    }
-
-
-   
-
-
-    return 0;
-    }
+if(a<=1)
+{
+    cout<<"the number"<<a<<"is"<<"prime number";
 }
+
+
+
+    for(int i=2;i<=sqrt(a);i++)
+    {
+        if(a%i==0)
+        {
+            cout<<"the number is  not prime number";
+            count=1;
+           break;
+        }
+
+
+    }
+
+    if(count !=1)
+    {
+        cout<<"it is prime number ";
+    }
+    
+    
+    
+
+
+} 
